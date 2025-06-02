@@ -10,9 +10,11 @@
   "keywords": [
     "gatsby"
   ],
+  
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
+      "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build"
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -30,6 +32,9 @@
       "eslint --fix"
     ]
   },
+  "engines": {
+  "node": "16.x"
+},
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.12.0",
